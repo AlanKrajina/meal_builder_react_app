@@ -1,11 +1,12 @@
 import React from 'react';
 import Layout from './components/Layout/Layout';
+import MealBuilder from './containers/MealBuilder/MealBuilder';
 
 function App() {
   return (
     <div>
       <Layout>
-        <p>Test</p>
+        <MealBuilder />
       </Layout>
     </div>
   );
