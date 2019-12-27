@@ -15,6 +15,10 @@ const meal = (props) => {
             return arr.concat(el) // reduce method to flatten 1 array with 4 inner arrays into only 1 array with OBJECTS
         }, []);
 
+        if (transformedIngredients.length === 0) {
+            transformedIngredients = <p>Please start adding ingredients</p>
+        }
+
     return (
             <div className={classes.Burger}>
                 <MealIngredient type='bread-top'/>
