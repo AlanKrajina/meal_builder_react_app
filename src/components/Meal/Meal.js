@@ -19,11 +19,14 @@ const meal = (props) => {
             transformedIngredients = <p>Please start adding ingredients</p>
         }
 
+
     return (
             <div className={classes.Burger}>
                 <MealIngredient type='bread-top'/>
                 {transformedIngredients}
                 <MealIngredient type='bread-bottom'/>
+                <p>Total price: {props.price}$</p>
+                <button onClick={props.reset}>Reset</button>
             </div>
 
     )
